@@ -1,8 +1,17 @@
 {
   "name": "rui-rodrigues",
-  "description": "a really cool app",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.13.0"
+  "description": "teste",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "teste"
+  ],
+  "author": "Rui",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
