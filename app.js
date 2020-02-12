@@ -1,5 +1,10 @@
+const https = require('https');
 const express = require('express');
 const app = express();
 app.use('/', express.static('www'));
 const port = process.env.PORT ? process.env.PORT : 80;
-app.listen(port, () => console.log('Listening on port', port));
+//app.listen(port, () => console.log('Listening on port', port));
+const privateKey = fs.readFileSync(__dirname+'/ssl/private.key','utf8');
+const certificate  = fs.readFileSync(__dirname+'/ssl/certificate.crt','utf8'); 
+const httpsServer = https.createServer({key: privateKey, cert: certificate}, app);         
+httpsServer.listen(port, () => { console.log('HTTP Server running at port 443') });
