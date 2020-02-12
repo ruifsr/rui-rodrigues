@@ -6,6 +6,7 @@ app.use('/', express.static('www'));
 const port = process.env.PORT ? process.env.PORT : 80;
 //app.listen(port, () => console.log('Listening on port', port));
 const privateKey = fs.readFileSync(__dirname+'/ssl/private.key','utf8');
+console.log('certificates exist?'+fs.existsSync(__dirname+'/ssl/certificate.crt'));
 const certificate  = fs.readFileSync(__dirname+'/ssl/certificate.crt','utf8'); 
 const httpsServer = https.createServer({key: privateKey, cert: certificate}, app);         
-httpsServer.listen(port, () => { console.log('HTTP Server running at port 443') });
+httpsServer.listen(port, () => { console.log('HTTP Server running at port' + port) });
