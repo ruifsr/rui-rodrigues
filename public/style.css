@@ -1,0 +1,212 @@
+body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+
+/* Cabeçalho de todas as páginas */
+
+header {
+  min-height: 220px;
+}
+
+header .bg-image {
+  position: absolute;
+  background: url('computerScience.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 220px;
+  z-index: -1;
+
+}
+
+header .container {
+  padding: 40px;
+}
+
+header #brand-title {
+  margin: 0;
+  color: #e8e9f2;
+  font-weight: bold;
+  font-size:30pt;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+header #brand-subtitle {
+  color: #e8e9f2;
+  margin-top: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* header .hamburger {} */
+
+header .hamburger-button {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+header .hamburger-button:hover {
+  color: #bbe9bb;
+}
+
+header #hamburger-checkbox {
+  display: none;
+}
+
+header #menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  background-color: rgb(26, 26, 26);
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s;
+}
+
+header #hamburger-checkbox:checked ~ #menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+/* #menu .menu-item {} */
+
+#menu .current-menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  padding: 0.8em 1.5em;
+  color: #e8e9f2;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#menu .menu-link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  padding: 0.8em 1.5em;
+  transition: color 0.3s ease;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#menu .menu-link:hover {
+  color: #e8e9f2;
+  font-weight: bolder;
+}
+
+/* Media queries em relação ao cabeçalho */
+
+/* Tablets */
+
+@media only screen and (min-width: 830px) {
+  header .hamburger {
+    display: none;
+  }
+
+  header #menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: initial;
+    visibility: initial;
+    position: initial;
+    opacity: initial;
+    transform: none;
+    transition: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e8e9f2;
+  }
+
+  #menu .menu-item {
+    text-align: center;
+    width: 12em;
+  }
+
+  #menu .current-menu-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 3px solid #e8e9f2;
+  }
+
+  #menu .menu-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+  }
+
+  #menu .menu-link:hover {
+    border-bottom: 3px solid #e8e9f2;
+    color: #ffffff;
+    transition: 0.3s ease;
+  }
+}
+
+
+h2 {
+  padding:20px;
+  width:50px;
+  margin: auto;
+}
+
+article {
+  width:60%;
+  margin: auto;
+}
+
+#introduction {
+  margin: 20px 0px;
+  display:flex;
+  justify-content: center;
+}
+#introduction div {
+  margin-left: 15px;
+}
+
+/***** List Styles *****/
+
+#introduction ul {
+  margin-bottom: 1.5em;
+  padding-left:10px;
+  margin-top:6px;
+}
+
+#introduction ul {
+  list-style-type: none;
+}
+#introduction li {
+  background: url('marker.png') no-repeat 0% 70%;
+  background-size: 10%;
+  padding-left: 25px;
+  font-size: 0.9em;
+}
+
+#introduction li {
+  margin-bottom: 3px;
+}
+
+#about{
+  text-align: justify;
+}
+
+#about div{
+  padding-bottom: 10px;
+}
+
+footer {
+  width:300px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}

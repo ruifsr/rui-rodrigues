@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Rui's Personal Page</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.8.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.8.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.8.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.8.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.8.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="bg-image"></div>
+      <div class="container">
+          <h1 id="brand-title">Rui Rodrigues</h1>
+          <h4 id="brand-subtitle">Personal Web Page</h4>
+          <div class="hamburger">
+            <label for="hamburger-checkbox" class="hamburger-button"><i class="fas fa-bars"></i> MENU</label>
+          </div>
+        <nav>
+          <input type="checkbox" id="hamburger-checkbox"/>
+          <ul id="menu">
+            <li class="menu-item">
+              <a class="current-menu-link" href="index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Academic</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Professional</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Hobbies</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <article>
+        <h2>Home</h2>
+        <hr />
+        <section id='introduction'>
+            <img src='me.jpg' alt='myPhoto' width='125' height='160'>
+            <div>
+              <h3>Rui Rodrigues</h3>
+              <b>Country:</b> Portugal, Setúbal <br />
+              <b>Ocupations:</b>
+              <ul>
+                <li>Software developer</li>
+                <li>Assistant Professor</li>
+                <li>Phd Student</li>
+              </ul>
+          </div>
+        </section>
+        <section id='about'>
+          <h3>About Me</h3>
+          <div>
+            <div>I started my professional career by working at Rieter Automotive (today known as Autoneum), where I was in charge of systems maintenance, 
+            as well as managing the network system and creating information backups.</div>
+            <div>After that I Started working in INSTICC where I've developed several features for PRIMORIS (our Event Management System).I'm also responsible/developer for several web crawling projects.
+            <div>I've also developed other event management systems (PRIMORIS APMGF and PRIMORIS VELA, for other fields of activity).</div>
+            <div>Since 2016 I’m teaching classes at Instituto Politécnico de Setubal. The subjects witch I’m assistant are related with web programming (javascript) and web services(.net).</div>
+            <div>Recently I joined a PHD program in Computer Science at New University of Lisbon. Meanwhile I'm also working in an european project called "CultureMoves".</div>
+          </div>
+        </section>
+        <hr />
+      </article>
+      <footer>
+        Copyright © Rui Rodrigues 2020
+      </footer>
+    </main>
+  </body>
+</html>
