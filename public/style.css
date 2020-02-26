@@ -155,22 +155,28 @@ header #hamburger-checkbox:checked ~ #menu {
 
 h2 {
   padding:20px;
-  width:50px;
+  width:150px;
   margin: auto;
 }
 
 article {
-  width:60%;
+  max-width: 800px;
   margin: auto;
+  line-height: 1.5;
 }
 
 #introduction {
   margin: 20px 0px;
-  display:flex;
-  justify-content: center;
+  display: inline-block;
+
 }
 #introduction div {
   margin-left: 15px;
+  display: inline-block;
+}
+#introduction img {
+  padding:1px;
+  border:1px solid #021a40;
 }
 
 /***** List Styles *****/
@@ -179,19 +185,14 @@ article {
   margin-bottom: 1.5em;
   padding-left:10px;
   margin-top:6px;
-}
-
-#introduction ul {
   list-style-type: none;
 }
-#introduction li {
-  background: url('marker.png') no-repeat 0% 70%;
-  background-size: 10%;
-  padding-left: 25px;
-  font-size: 0.9em;
-}
 
 #introduction li {
+  background: url('marker.png') no-repeat 0% 0%;
+  background-size: 7%;
+  padding-left: 25px;
+  font-size: 0.9em;
   margin-bottom: 3px;
 }
 
