@@ -8,7 +8,7 @@ header {
 
 header .bg-image {
   position: absolute;
-  background: url('computerScience.jpg');
+  background: url('images/computerScience.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -26,13 +26,13 @@ header #brand-title {
   color: #e8e9f2;
   font-weight: bold;
   font-size:30pt;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -0.5px 0 gray, 0 0.5px gray, 0.5px 0 gray, 0 -0.5px gray;
 }
 
 header #brand-subtitle {
   color: #e8e9f2;
   margin-top: 0;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -0.5px 0 gray, 0 0.5px gray, 0.5px 0 gray, 0 -0.5px gray;
 }
 
 /* header .hamburger {} */
@@ -82,7 +82,7 @@ header #hamburger-checkbox:checked ~ #menu {
   display: block;
   padding: 0.8em 1.5em;
   color: #e8e9f2;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -0.5px 0 gray, 0 0.5px gray, 0.5px 0 gray, 0 -0.5px gray;
 }
 
 #menu .menu-link {
@@ -93,7 +93,7 @@ header #hamburger-checkbox:checked ~ #menu {
   display: block;
   padding: 0.8em 1.5em;
   transition: color 0.3s ease;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -0.5px 0 gray, 0 0.5px gray, 0.5px 0 gray, 0 -0.5px gray;
 }
 
 #menu .menu-link:hover {
@@ -170,7 +170,7 @@ article {
   display: inline-block;
 
 }
-#introduction div {
+#mainInfo {
   margin-left: 15px;
   display: inline-block;
 }
@@ -189,7 +189,7 @@ article {
 }
 
 #introduction li {
-  background: url('marker.png') no-repeat 0% 0%;
+  background: url('images/marker.png') no-repeat 0% 0%;
   background-size: 7%;
   padding-left: 25px;
   font-size: 0.9em;
@@ -197,10 +197,8 @@ article {
 }
 
 #about{
+  width:100%;
   text-align: justify;
-}
-
-#about div{
   padding-bottom: 10px;
 }
 
@@ -210,4 +208,34 @@ footer {
   margin-left:auto;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.contactImg{
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+#contacts a{
+ text-decoration: none;
+}
+
+a {columns: #000000;;}         /* Unvisited link  */
+a:visited {color:#000000;} /* Visited link    */
+a:hover {color:#000000;}   /* Mouse over link */
+a:active {color:#000000;}  /* Selected link   */
+
+#websites div{
+  margin-bottom: 3px;
+}
+
+#contacts ul {
+  padding-left:0px;
+  list-style-type: none;
+}
+
+#contacts li {
+  background: url('images/marker.png') no-repeat 0% 0%;
+  background-size: 2.5%;
+  padding-left: 22px;
 }

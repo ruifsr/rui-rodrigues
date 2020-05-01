@@ -18,3 +18,7 @@
       // document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
     }
   });
+
+  window.onload = function() {
+    document.getElementById('currentYear').innerText = new Date().getFullYear().toString();
+  }

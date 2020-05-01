@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Rui's Personal Page</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.8.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.8.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.8.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.8.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.8.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="bg-image"></div>
+      <div class="container">
+          <h1 id="brand-title">Rui Rodrigues</h1>
+          <h4 id="brand-subtitle">Personal Web Page</h4>
+          <div class="hamburger">
+            <label for="hamburger-checkbox" class="hamburger-button"><i class="fas fa-bars"></i> MENU</label>
+          </div>
+        <nav>
+          <input type="checkbox" id="hamburger-checkbox"/>
+          <ul id="menu">
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Academic</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Professional</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="index.html">Hobbies</a>
+            </li>
+            <li class="menu-item">
+              <a class="current-menu-link" href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <article id="contacts">
+            <h2>Contacts</h2>
+            <hr />
+            <section id='websites'>
+                <h4>WEBSITES</h4>
+                <div>
+                    <a target="blank" href="https://www.linkedin.com/in/rui-rodrigues-63017316">
+                        <img class="contactImg" src="images/linkedIn.png" alt="LI Icon"> Linkedin
+                    </a>
+                </div>
+                <div>
+                    <a target="blank" href="https://www.researchgate.net/profile/Rui_Rodrigues20">
+                        <img class="contactImg" src="images/ResearchGate.png" alt="RG Icon"> Research Gate
+                    </a>
+                </div>
+                <div>
+                    <a target="blank" href="https://scholar.google.pt/citations?hl=en&user=pSLF31cAAAAJ">
+                        <img class="contactImg" src="images/GoogleScholar.png" alt="GS Icon"> Google scholar
+                    </a>
+                </div>
+                <div>
+                    <a target="blank" href="https://www.si.ips.pt/ests_si/funcionarios_geral.FormView?P_CODIGO=20031">
+                        <img class="contactImg" src="images/IPS.png" alt="IPS Icon"> Perfil Est Setubal IPS
+                    </a>
+                </div>
+            </section>
+            <section id='emails'>
+                <h4>Email Addresses</h4>
+                <ul>
+                    <li><img src="images/cont_est.PNG" alt="est ips contact"></li>
+                    <li><img src="images/cont_fct.PNG" alt="fct unl contact"></li>
+                    <li><img src="images/cont_pessoal.PNG" alt="personal contact"></li>
+                </ul>
+            </section>
+            <section id='address'>
+                <h4>Addresses</h4>
+                <div>
+                    <a target="blank" href="https://www.estsetubal.ips.pt/">
+                        <img class="contactImg" src="images/IPS.png" alt="IPS Icon"> 
+                        Escola Superior de Tecnologia, Campus do IPS - Estefanilha, 2910-761, Setúbal , Portugal
+                    </a>
+                </div>
+                <div>
+                    <a target="blank" href="https://www.fct.unl.pt/">
+                        <img class="contactImg" src="images/nova.png" alt="IPS Icon"> 
+                        Faculdade de Ciências e Tecnologia, Universidade Nova de Lisboa, Quinta da Torre, Caparica, Portugal
+                    </a>
+                </div>
+            </section>
+            <br /><hr />
+        </article>
+    </main>
+    <footer>
+        Copyright © Rui Rodrigues <span id='currentYear'></span>
+        </footer>
+    </main>
+    </body>
+</html>
+    
