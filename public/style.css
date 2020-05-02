@@ -166,7 +166,7 @@ article {
 }
 
 #introduction {
-  margin: 20px 0px;
+  margin: 10px 0px;
   display: inline-block;
 
 }
@@ -200,6 +200,11 @@ article {
   width:100%;
   text-align: justify;
   padding-bottom: 10px;
+  font-size: 0.9em;
+}
+
+#about div{
+padding-bottom: 7px;
 }
 
 footer {
@@ -208,6 +213,13 @@ footer {
   margin-left:auto;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+#websites img{
+  display: inline-block;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 .contactImg{
@@ -225,9 +237,6 @@ a:visited {color:#000000;} /* Visited link    */
 a:hover {color:#000000;}   /* Mouse over link */
 a:active {color:#000000;}  /* Selected link   */
 
-#websites div{
-  margin-bottom: 3px;
-}
 
 #contacts ul {
   padding-left:0px;
@@ -238,4 +247,8 @@ a:active {color:#000000;}  /* Selected link   */
   background: url('images/marker.png') no-repeat 0% 0%;
   background-size: 2.5%;
   padding-left: 22px;
+}
+
+#academic div{
+  margin-bottom: 10px;
 }
