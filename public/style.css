@@ -1,4 +1,4 @@
-body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Helvetica, Arial, sans-serif; margin: 0; padding: 0;   font-size: 0.9em;}
 
 /* Cabeçalho de todas as páginas */
 
@@ -19,6 +19,7 @@ header .bg-image {
 
 header .container {
   padding: 40px;
+  font-size: 1.1em;
 }
 
 header #brand-title {
@@ -192,7 +193,7 @@ article {
   background: url('images/marker.png') no-repeat 0% 0%;
   background-size: 7%;
   padding-left: 25px;
-  font-size: 0.9em;
+
   margin-bottom: 3px;
 }
 
@@ -200,7 +201,6 @@ article {
   width:100%;
   text-align: justify;
   padding-bottom: 10px;
-  font-size: 0.9em;
 }
 
 #about div{
@@ -250,5 +250,9 @@ a:active {color:#000000;}  /* Selected link   */
 }
 
 #academic div{
+  margin-bottom: 10px;
+}
+
+#professional div{
   margin-bottom: 10px;
 }
