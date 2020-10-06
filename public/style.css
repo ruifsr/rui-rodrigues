@@ -256,3 +256,7 @@ a:active {color:#000000;}  /* Selected link   */
 #professional div{
   margin-bottom: 10px;
 }
+
+#demos {
+  display:none;
+}

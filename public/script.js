@@ -22,3 +22,8 @@
   window.onload = function() {
     document.getElementById('currentYear').innerText = new Date().getFullYear().toString();
   }
+
+  function demosOnOff() {
+    divDemosDisplay = document.getElementById("demos").style.display;
+    document.getElementById("demos").style.display = (!divDemosDisplay || divDemosDisplay==="none") ? "inline-block" : "none";
+  }
